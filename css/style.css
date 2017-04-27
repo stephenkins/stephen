@@ -23,7 +23,7 @@ html{
 }
 
 #s:hover{
-    content: url(/images/stephen-yellow.png);
+    content: url(../images/stephen-yellow.png);
 }
 
 .menu {
@@ -251,7 +251,7 @@ h2.asd{
 .works{
     margin-top: 180px;
     padding-top: 180px;
-    background-image: url(/images/blue-lagoon.jpg);
+    background-image: url(../images/blue-lagoon.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
