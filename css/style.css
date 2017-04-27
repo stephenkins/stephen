@@ -1,0 +1,275 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+html{
+    font-family: "Opens Sans", sans-serif;
+    color: #191654;
+}
+
+/*----- NAV -----*/
+
+.navbar{
+    background-color: #191654;
+    border-bottom: 10px solid #15dab6;
+    align-items: center;
+}
+
+.navbar-brand img{
+    margin-top: 10px;
+    height: 40px;
+}
+
+#s:hover{
+    content: url(/images/stephen-yellow.png);
+}
+
+.menu {
+    margin: 0 0px 0 0;
+    float: right;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+.menu a:hover {
+    clear: right;
+    text-decoration: none;
+    color: #ffb933;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+span {
+    color: #15dab6;
+}
+
+span:hover{
+    color: #ffb933;
+}
+
+label {
+    font-size: 30px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+    color: #ffffff;
+}
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        margin-right: 15%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        margin: 0;
+    }
+    
+    #toggle:checked + .menu {
+        display: block;
+    }
+}
+
+/*----- end NAV -----*/
+
+
+/*----- Slide1 -----*/
+.banner{
+    padding-top: 210px;
+}
+
+.avatar img{
+    width: 250px;
+    border-radius: 100%;
+    border: 13px solid;
+    border-color: #ffb933;
+}
+
+.avatar img:hover{
+    opacity: 0.80;
+}
+
+.text{
+    margin-top: 30px;
+}
+
+h1.qwe{
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #191654;
+    text-align: center;
+}
+
+h2.asd{
+    font-family: "Opens Sans", sans-serif;
+    font-size: 25px;
+    color: #15dab6;
+    text-align: center;
+}
+
+.content .text1{
+    color: #191654;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.content .text1 > p{
+}
+
+.content .btnn{
+    padding-top: 40px;
+}
+
+.content .btn-cta{
+    color: #ffffff;
+    background-color: #ffb933;
+    border-radius: 40px;
+    padding: 15px;
+    text-decoration: none;
+    -webkit-box-shadow: 0 2px 6px #375180;
+    -moz-box-shadow: 0 2px 6px #375180;
+    box-shadow: 0 2px 6px #375180;
+}
+
+.content a:hover{
+    color: #ffffff;
+    background-color: #ffcd6c;
+    -webkit-box-shadow: 0 2px 6px #223b67;
+    -moz-box-shadow: 0 2px 6px #223b67;
+    box-shadow: 0 2px 6px #223b67;
+}
+
+/*--- FUCKING MODAL ---*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 500px;
+    height: 150px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    display: none;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 5px 16px;
+    background-color: #191654;
+    color: #fff;
+}
+
+.modal-body{
+    padding-top: 24px;
+    padding-left: 30px;
+}
+
+.modal-body a{
+    color: #15dab6;
+}
+
+.modal-body a:hover {
+    color: #ffb933;
+    background-color: transparent;
+    -webkit-box-shadow: 0 0px 0px;
+    -moz-box-shadow: 0 0px 0px;
+    box-shadow: 0 0px 0px;
+}
+
+.fa{
+    padding-right: 10px;
+}
+
+.modal-footer {
+    padding: 5px 16px;
+    background-color: #15dab6;
+}
+
+/*----- end Slide1 -----*/
+
+/*----- Slide2 -----*/
+.works{
+    margin-top: 180px;
+    padding-top: 180px;
+    background-image: url(/images/blue-lagoon.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: block;
+}
+
+.works-works{
+    width: 100%;
+}
+
+.works-cell{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    text-align: center;
+    margin: 8px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
