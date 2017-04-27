@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stephen Neri</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+      
+    <!-- JS -->
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="smooth.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Oswald|Roboto" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/s.png" />
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#"><img id="s" src="images/stephen-white.png"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <label for="toggle">&#9776;</label>
+                        <input type="checkbox" id="toggle">
+                        <div class="menu">
+                            <a href="#about" class="active">About</a>
+                            <a href="#works">Works</a>
+                            <a href="#"><span>Contact Me</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navigation -->
+        
+        <!-- Banner -->
+        <div class="banner" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center content">
+                        <div class="avatar">
+                            <img src="images/avatar.jpg" alt="Stephen Neri">
+                        </div>
+                        
+                        <div class="text">
+                            <h1 class="qwe">Stephen John Neri</h1>
+                            <h2 class="asd">Multimedia Designer / Aircraft Pilot</h2>
+                                <div class="text1">
+                                    <div class="row">
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-6">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            <p>Integer eu nibh eget ligula fringilla interdum quis ac turpis. Donec rutrum maximus nulla id bibendum. In hac habitasse platea dictumst. Integer sem ante, ultricies eget libero non, bibendum commodo quam.</p>
+                                            <div class="btnn">
+                                                <a class="btn-cta" href="#" id="myBtn">Connect with me.</a>
+                                            </div>
+                                            <div id="myModal" class="modal">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <span class="close">&times;</span>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <a href="#">
+                                                            <i class="fa fa-facebook-official fa-5x"></i>
+                                                        </a>
+                                                        <a href="#">
+                                                            <i class="fa fa-twitter-square fa-5x"></i>
+                                                        </a>
+                                                        <a href="#">
+                                                            <i class="fa fa-instagram fa-5x"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3"></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Slide2 -->
+        <div class="works" id="works">
+            <div class="works-container">
+                <div class="col-lg-12 col-md-12 text-center content">
+                    <div class="works-works">
+                        <div class="works-cell">
+                            <p>qwe</p>
+                        </div>
+                        <div class="works-cell">
+                            <p>asd</p>
+                        </div>
+                        <div class="works-cell">
+                            <p>zxc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scripts -->
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
+
